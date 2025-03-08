@@ -1,0 +1,212 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: #efe7d9;
+    color: #2a2a2a;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 10px;
+}
+
+h1 {
+
+    font-size: medium;
+
+}
+/* Navigation */
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5vw; /* Adds spacing between links */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem; /* Adjusted font size */
+    text-decoration: none;
+    color: #2a2a2a;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #fdfaf5;
+    color: #2a2a2a;
+}
+
+/* Container for content */
+.container {
+    max-width: 700px;
+    padding: 10px;
+    text-align: left;
+    margin-top: 80px; /* Space between header and content */
+    text-decoration: none;
+}
+
+.container p a {
+    font-size: 18px;
+    color: #2a2a2a; /* Adjust color as needed */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes it stand out */
+}
+
+.container p a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #555; /* Slightly different color for effect */
+}
+
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Blockquote: More space from header */
+blockquote {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding: 15px;
+    border-left: 4px solid #2a2a2a;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+/* Signature Styling */
+.signature {
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    text-align: right;
+    opacity: 0.7;
+}
+
+/* Footer */
+footer p {
+    font-size: x-small !important; 
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+}
+
+/* -------- RESPONSIVE DESIGN -------- */
+
+/* Adjust layout for smaller screens (tablets & phones) */
+@media (max-width: 768px) {
+    /* Reduce padding in body */
+    body {
+        padding: 0 10px;
+    }
+
+    /* Adjust header size */
+    header {
+        padding: 6px 0;
+    }
+
+    /* Stack nav items vertically on small screens */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce nav font size */
+    nav ul li a {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    /* Reduce container width */
+    .container {
+        max-width: 90%;
+        padding: 30px;
+        margin-top: 100px; /* Ensures content doesn't get hidden behind fixed header */
+    }
+
+    /* Adjust blockquote */
+    blockquote {
+        font-size: 1.1rem;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    /* Reduce heading sizes */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+}
+
+/* Adjust for very small screens (phones under 480px wide) */
+@media (max-width: 480px) {
+    /* Stack nav items vertically */
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Reduce font sizes for readability */
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        max-width: 95%;
+        padding: 20px;
+        margin-top: 120px; /* Adjust space for fixed header */
+    }
+
+    /* Reduce blockquote text size */
+    blockquote {
+        font-size: 1rem;
+    }
+
+    /* Footer text smaller */
+    footer {
+        font-size: x-small;
+        padding: 6px;
+    }
+}
