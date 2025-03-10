@@ -79,7 +79,7 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     width: fit-content; /* Ensures the box only wraps around content */
-    max-width: 90%; /* Prevents overly large boxes */
+    max-width: 60%; /* Prevents overly large boxes */
     margin: auto; /* Centers posts */
     margin-bottom: 40px;
     text-align: center;
