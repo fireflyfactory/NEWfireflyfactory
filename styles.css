@@ -49,7 +49,7 @@ nav ul li a:hover {
 .container {
     max-width: 700px;
     padding: 40px;
-    text-align: left;
+    text-align: center;
 }
 
 h1 {
@@ -102,4 +102,11 @@ pre {
 footer {
     padding-top: 5rem;
     font-size: x-small;
+}
+
+
+.cowsay {
+    max-width: 700px;
+    padding: 40px;
+    text-align: left;
 }
