@@ -46,10 +46,10 @@ nav ul li a:hover {
 }
 
 
-.container {
+.fftitle {
     max-width: 700px;
     padding: 40px;
-    text-align: left;
+    text-align: center;
 }
 
 h1 {
@@ -81,7 +81,7 @@ pre {
     height: auto; /* Keeps aspect ratio */
     display: block; /* Prevents extra spacing */
     margin: 0 auto; /* Centers the image */
-    border-radius: 5px;
+    border-radius: 15px;
     border:1px solid #000000;
 }
 
@@ -102,4 +102,11 @@ pre {
 footer {
     padding-top: 5rem;
     font-size: x-small;
+}
+
+
+.cowsay {
+    max-width: 700px;
+    padding: 40px;
+    text-align: left;
 }
