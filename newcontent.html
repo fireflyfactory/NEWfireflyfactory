@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firefly Factory — Book</title>
+<link rel="stylesheet" href="newcontentstyle.css">
+</head>
+
+<body>
+
+<header>
+<nav>
+<ul>
+<li><a href="#">home</a></li>
+<li><a href="#">writings</a></li>
+<li><a href="#">about</a></li>
+<li><a href="#">contact</a></li>
+</ul>
+</nav>
+</header>
+
+<h1>Firefly Factory — Book</h1>
+<p style="text-align:center;">A simple CSS-only book layout</p>
+
+<div class="book">
+<div class="book">
+  <!-- Radio buttons to control which page is shown -->
+  <input type="radio" name="page" id="page1" checked>
+  <input type="radio" name="page" id="page2">
+  <input type="radio" name="page" id="page3">
+
+  <!-- Spread 1 -->
+  <div class="spread">
+    <label for="page3" class="prev">&lt;</label>
+    <div class="left-page"> … </div>
+    <div class="right-page"> … </div>
+    <label for="page2" class="next">&gt;</label>
+  </div>
+
+  <!-- Spread 2 -->
+  <div class="spread">
+    <label for="page1" class="prev">&lt;</label>
+    <div class="left-page"> … </div>
+    <div class="right-page"> … </div>
+    <label for="page3" class="next">&gt;</label>
+  </div>
+
+  <!-- Spread 3 -->
+  <div class="spread">
+    <label for="page2" class="prev">&lt;</label>
+    <div class="left-page"> … </div>
+    <div class="right-page"> … </div>
+    <label for="page1" class="next">&gt;</label>
+  </div>
+</div>
+
+<footer>
+<p style="text-align:center; font-size:small;">© 2025 Firefly Factory. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

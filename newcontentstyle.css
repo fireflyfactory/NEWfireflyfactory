@@ -1,0 +1,111 @@
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #efe7d9;
+  color: #2a2a2a;
+  line-height: 1.8;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+
+.book {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.spread {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  background: linear-gradient(to right, #fdf8e1 49.5%, #fdf8e1 50.5%, #d4c4aa 51%);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.left-page,
+.right-page {
+  flex: 1;
+  padding: 20px;
+  background: #fffaf1;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+}
+
+.left-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.05), transparent);
+  pointer-events: none;
+}
+
+.right-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0,0,0,0.05), transparent);
+  pointer-events: none;
+}
+
+.spread::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: #d4c4aa;
+  z-index: 1;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.4), 0 0 3px rgba(0,0,0,0.2);
+}
+
+/* Optional: style images nicely */
+.spread img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Optional: make it mobile-friendly */
+@media (max-width: 700px) {
+  .spread {
+    flex-direction: column;
+  }
+
+  .left-page,
+  .right-page {
+    border: none;
+  }
+
+  .spread::before {
+    display: none;
+  }
+}

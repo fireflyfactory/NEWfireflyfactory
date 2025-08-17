@@ -1,0 +1,10 @@
+ <article class="post">
+            <h2> 
+            </h2>
+            <p>
+            </p>
+
+            <img src="">
+             
+            <h4> <i> </i> </h4>
+        </article> 
