@@ -1,0 +1,137 @@
+body {
+    font-family:serif;
+    background-color: #efe7d9;
+    color: #2a2a2a;
+    line-height: 1.8;
+    margin: 5;
+    padding: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+nav {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5vh; /* Spacing between links */
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #2a2a2a; /* Light text for contrast */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #fdfaf5;
+    color: #2a2a2a;
+}
+
+
+.fftitle {
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+
+    text-decoration: none;
+}
+p {
+    font-size: 1.2rem;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #a11b1b; /* Light text for contrast */
+    padding: 8px 15px;
+    border-radius: 5px;
+
+}
+
+a :hover {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ff0303; /* Light text for contrast */
+    padding: 8px 15px;
+    border-radius: 5px;
+
+}
+
+pre {
+    font-size: small;
+}
+
+.post {
+    max-width: 20rem; /* Ensures it doesn't stretch too wide */
+    width: 100%;
+    margin: 1rem;
+    text-align: center; /* Ensures text and image are centered */
+    padding: 10px;
+    border-color: #000000;
+    border: 5px;
+    border-radius: 15px;
+    background-color: #efe7d9;
+    flex-direction: grid;
+
+
+}
+
+.post img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto; /* Keeps aspect ratio */
+    display: block; /* Prevents extra spacing */
+    margin: 0 auto; /* Centers the image */
+    border-radius: 15px;
+    border:1px solid #000000;
+}
+
+.post p {
+    margin-top: 5px; /* Adjust spacing between image and caption */
+    font-size: 1rem;
+    color: #555;
+    text-align: center; /* Ensures the caption is centered */
+}   
+
+
+.signature {
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    text-align: right;
+    opacity: 0.7;
+}
+
+footer {
+    padding-top: 5rem;
+    font-size: x-small;
+}
+
