@@ -1,0 +1,202 @@
+body {
+    font-family:serif;
+    background-color: #efe7d9;
+    color: #2a2a2a;
+    line-height: 1.8;
+    margin: 10;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+nav {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5vh; /* Spacing between links */
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #2a2a2a; /* Light text for contrast */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #fdfaf5;
+    color: #2a2a2a;
+}
+
+
+.fftitle {
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+
+    text-decoration: none;
+}
+p {
+    font-size: 1.2rem;
+}
+
+pre {
+    font-size: small;
+}
+
+.post {
+    max-width: 700px; /* Ensures it doesn't stretch too wide */
+    width: 100%;
+    margin: 100px;
+    text-align: center; /* Ensures text and image are centered */
+    padding: 10px;
+    border:#2a2a2a;
+    border:1px slategrey dashed;
+    border-radius: 15px;
+    background-color: #efe7d9;
+
+}
+
+.post img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto; /* Keeps aspect ratio */
+    display: block; /* Prevents extra spacing */
+    margin: 0 auto; /* Centers the image */
+    border-radius: 15px;
+    border:1px solid #000000;
+}
+
+.post p {
+    margin-top: 5px; /* Adjust spacing between image and caption */
+    font-size: 1rem;
+    color: #555;
+    text-align: center; /* Ensures the caption is centered */
+}   
+
+
+.signature {
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    text-align: right;
+    opacity: 0.7;
+}
+
+footer {
+    padding-top: 5rem;
+    font-size: x-small;
+}
+
+
+.cowsay {
+    max-width: 700px;
+    padding: 40px;
+    text-align: left;
+}
+
+/* ...existing code... */
+
+.posts {
+    width: 100%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    /* columns will grow/shrink to fit posts; increase min value for wider cards */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 1.25rem;
+    align-items: start;        /* keep cards aligned to top */
+    justify-items: stretch;    /* stretch cards to fill column width */
+    grid-auto-rows: auto;      /* rows size to content */
+    grid-auto-flow: dense;     /* fill holes for varied sizes */
+    box-sizing: border-box;
+}
+
+/* card-like posts inside the grid */
+.post {
+    background-color: #fffaf1;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+    box-sizing: border-box;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;                 /* grid gap controls spacing */
+    align-self: start;        /* ensures varied-height cards align to top */
+    justify-self: stretch;    /* fill the column width */
+    width: 100%;
+}
+
+/* image tweaks to match card look */
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* keep captions subtle */
+.post h4, .post p {
+    margin: 0;
+    color: #333;
+}
+
+/* prevent spanning on small viewports */
+@media (max-width: 900px) {
+    .post--wide { grid-column: span 1; }
+}
+
+/* image tweaks */
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* small-screen padding */
+@media (max-width: 420px) {
+    .post { padding: 1rem; } 
+    }
+
+/* small screens: slightly less padding */
+@media (max-width: 420px) {
+    .post { padding: 1rem; }
+}
+
+/* ...existing code... */

@@ -91,6 +91,20 @@ pre {
     font-size: small;
 }
 
+.posts {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;                /* space between cards */
+    justify-content: center;  /* center the row */
+    box-sizing: border-box;
+}
+
+
 .post {
     max-width: 20rem; /* Ensures it doesn't stretch too wide */
     width: 100%;
@@ -111,7 +125,6 @@ pre {
     height: auto; /* Keeps aspect ratio */
     display: block; /* Prevents extra spacing */
     margin: 0 auto; /* Centers the image */
-    border-radius: 15px;
     border:1px solid #000000;
 }
 
